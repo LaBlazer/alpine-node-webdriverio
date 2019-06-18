@@ -10,6 +10,3 @@ RUN dpkg -i google-chrome-stable_current_amd64.deb
 #Install Openjdk 8
 RUN apt-get install default-jre -y
 RUN apt-get install default-jdk -y
-
-CMD java -version && google-chrome --version
-
