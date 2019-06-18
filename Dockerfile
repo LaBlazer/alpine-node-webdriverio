@@ -10,5 +10,4 @@ RUN apt install -y ./google-chrome-stable_current_amd64.deb
 RUN apt-get install default-jre -y
 
 COPY . .
-COPY java_test.sh /usr/local/bin
-COPY chrome_test.sh /usr/local/bin
+COPY tests.sh /usr/local/bin
