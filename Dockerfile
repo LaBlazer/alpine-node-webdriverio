@@ -12,5 +12,6 @@ RUN apt-get install default-jre -y
 RUN apt-get install default-jdk -y
 
 COPY . .
-COPY run_tests.sh /usr/local/bin
+COPY java_test.sh /usr/local/bin
+COPY chrome_test.sh /usr/local/bin
 CMD java -version && google-chrome --version
