@@ -1,3 +1,4 @@
 sut:
   build: .
-  command: run_tests.sh
+  command: chmod +x run_tests.sh
+  command: ./run_tests.sh
