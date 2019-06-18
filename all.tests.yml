@@ -1,4 +1,0 @@
-sut:
-  build: .
-  command: java_test.sh
-  command: chrome_test.sh
