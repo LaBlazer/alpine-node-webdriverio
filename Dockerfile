@@ -1,6 +1,6 @@
 FROM node:10-stretch-slim
 
-RUN apt-get update
+RUN apt-get update -y
 
 #Install Google Chrome
 RUN apt install -y --no-install-recommends apt-utils
@@ -8,8 +8,7 @@ RUN wget --quiet https://dl.google.com/linux/direct/google-chrome-stable_current
 RUN apt install -y ./google-chrome-stable_current_amd64.deb
 
 #Install Openjdk 8
-RUN apt-get update 
- && DEBIAN_FRONTEND=noninteractive apt-get -y upgrade \
+RUN DEBIAN_FRONTEND=noninteractive apt-get -y upgrade \
  && DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends \
  curl ca-certificates krb5-locales libcurl3 libffi6 libgmp10 libgnutls30 \
  libgssapi-krb5-2 libhogweed4 libidn11 libidn2-0 libk5crypto3 libkeyutils1 \
