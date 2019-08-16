@@ -8,4 +8,4 @@ CMD ["/usr/bin/chromium", "--version"]
 
 
 COPY . .
-COPY tests.sh /usr/local/bin
+
