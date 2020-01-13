@@ -1,7 +1,7 @@
 FROM node:lts-alpine
 
 RUN apk add --update xvfb \
-    openjdk12-jre-headless \
+    openjdk8-jre-base \
     python \
     gcc \
     g++ \
